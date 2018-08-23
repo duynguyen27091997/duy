@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        margin: auto;
+        width: 100%;
+        height: auto;
+
+    }
+    header{
+        width: 100%;
+        color: white;
+        padding: 45px;
+        text-align: center;
+        background-color: #777777;
+    }
+    nav{
+        width: 100%;
+        background-color: #3e8e41;
+    }
+    .ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+    li{
+        padding: 5px 10px;
+
+    }
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+    .column{
+        height: 500px;
+        width: 32%;
+        background-color: gray;
+        margin: 10px 5px ;
+    }
+    .content{
+          display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    @media screen and (max-width: 900px) {
+        .column {
+            width: 48%;
+        }
+    }
+    @media screen and (max-width: 500px)  {
+        .column {
+            width: 100%;
+        }
+    }
+</style>
+<body>
+<header>HEADER</header>
+<nav>
+    <ul class="ul">
+        <li ><a href="">STAR</a></li>
+        <li><a href="">MOON</a></li>
+        <li><a href="">SUN</a></li>
+
+    </ul>
+</nav>
+<div class="content">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+</div>
+    <footer></footer>
+</body>
+</html>
